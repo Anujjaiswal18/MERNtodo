@@ -4,7 +4,7 @@ import Showtodo from './Showtodo';
 import AddTodo from './AddTodo';
 
 const Home = () => {
-  const {authUser , data,task} = useAuthStore();  
+  const { data,task} = useAuthStore();  
   const todos = task
   
   useEffect(() => {

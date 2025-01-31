@@ -3,7 +3,7 @@ import { useAuthStore } from "../store/useAuthStore";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({ email: "", password: "" });
-  const { login , isLoggingIn} = useAuthStore();
+  const { login } = useAuthStore();
   const handleLoginChange = (e) => {
     const { name, value } = e.target;
     setLoginData({ ...loginData, [name]: value });
