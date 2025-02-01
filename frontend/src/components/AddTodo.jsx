@@ -25,8 +25,7 @@ const AddTodo = () => {
       <h2 className="text-2xl font-semibold text-center text-gray-800 mb-4">
         Add a Task
       </h2>
-      <form
-        onSubmit={handleAddTask}
+      <div
         className="w-full md:w-[90%] mx-auto  flex gap-2 items-center justify-center"
       >
         <div className="w-[55%] md:w-[80%] ">
@@ -49,14 +48,15 @@ const AddTodo = () => {
             </button>
           ) : (
             <button
-              type="submit"
+              type="button"
+              onClick={handleAddTask}
               className="bg-blue-500 hover:bg-blue-600 text-white px-2 py-2 md:px-4 md:py-2 rounded-md"
             >
               Add Task
             </button>
           )}
         </div>
-      </form>
+      </div>
     </div>
   );
 };
